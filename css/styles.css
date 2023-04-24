@@ -1,0 +1,656 @@
+/* Variables que mas se repiten */
+:root {
+  --font-family-roboto: "Roboto", sans-serif;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --letter-spacing: 0.03em;
+  --color-logo-black: #000000;
+  --color-black: #212121;
+  --color-white: #ffffff;
+  --color-blue: #2196f3;
+  --color-blue-active: #188ce8;
+  --color-gray: #757575;
+  --color-hero: #2f303a;
+  --color-light-gray: #e5e5e5;
+  --color-back-white: #f5f4fa;
+  --color-gray-border: #ececec;
+  --color-white-border: #eeeeee;
+  --color-client-border: #afb1b8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-roboto);
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-14);
+  letter-spacing: var(--letter-spacing);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  /* es o no necesario el ancho? */
+  /* width: 1600px; */
+}
+
+ul li,
+.logo,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.title-invisible {
+  display: none;
+}
+
+/* ------------- HEADER ------------------ */
+
+nav .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+/* h1,
+h2,
+h3,
+p {
+  display: block;
+} */
+
+.menu {
+  margin-left: 93px;
+  /* margin-right: 305px; */
+}
+
+.menu-link,
+.contact-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.menu-link,
+.box-title {
+  color: var(--color-black);
+}
+
+.contact {
+  margin-left: auto;
+}
+
+.contact-link .icon {
+  fill: var(--color-gray);
+  /* width: 16px;
+  height: 16px; */
+  margin-right: 10px;
+}
+
+.contact-link .mail {
+  width: 16px;
+  height: 12px;
+}
+
+.contact-link .tel {
+  width: 10px;
+  height: 16px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav,
+.menu,
+.contact,
+.services-list,
+.pictures-list,
+.team-list,
+.buttons-list,
+.boxes-list {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+
+.header-portfolio {
+  border-bottom: 1px solid var(--color-gray-border);
+}
+
+nav,
+.menu-link,
+.menu-item {
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.logo {
+  width: 145px;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+}
+
+.logo,
+.menu .menu-item .fixed-link {
+  color: var(--color-blue);
+}
+
+.studio-head {
+  color: var(--color-logo-black);
+}
+
+.menu-link,
+.contact-link,
+.team-name,
+.button-item {
+  font-weight: var(--font-weight-500);
+}
+.contact-link,
+.title-gray,
+.service-text,
+.team-role,
+.box-text {
+  color: var(--color-gray);
+}
+
+.menu-link,
+.contact-link {
+  letter-spacing: 0.02em;
+}
+
+.menu-link,
+.contact-link,
+.service-title,
+.social-title {
+  line-height: 1.1;
+}
+
+.logo,
+.picture-title,
+.team-title,
+.team-name,
+.team-role,
+.client-title {
+  line-height: 1.17;
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.contact-link:hover,
+.contact-link:focus,
+.contact-link:hover .icon,
+.contact-link:focus .icon,
+.address-link:hover,
+.address-link:focus {
+  color: var(--color-blue);
+  fill: currentColor;
+}
+
+/* ---------------- SECCION HERO ---------------- */
+
+.hero {
+  width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  /* Va aqui o aparte? */
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero-button {
+  padding: 10px 32px;
+}
+
+.hero-title,
+.service-block,
+.team-member img,
+.team-member .social-list {
+  margin-bottom: 30px;
+}
+
+.hero,
+footer {
+  background-color: var(--color-hero);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--color-blue-active);
+}
+
+.hero-button,
+.button-item:hover,
+.button-item:focus {
+  background-color: var(--color-blue);
+}
+
+.hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  width: 58%;
+}
+
+.hero-button,
+.button-box .button-item {
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.studio-foot,
+.hero-title,
+.hero-button,
+.address-link {
+  color: var(--color-white);
+}
+
+.hero-title,
+.hero-button,
+.box-title {
+  letter-spacing: 0.06em;
+}
+
+.hero-button,
+.box-text {
+  line-height: 1.9;
+}
+/* Preguntar propiedades inherit */
+.hero-button,
+.button-item {
+  font-family: inherit;
+  /* font-weight: inherit; */
+}
+.hero-container {
+  text-align: center;
+}
+.hero-button {
+  padding: 10px 32px;
+}
+
+.team-name,
+.team-role,
+.box-text,
+.hero-button,
+.button-item {
+  font-size: var(--font-size-16);
+}
+
+/* ---------------- SECCION SERVICES ---------------- */
+
+.service-item,
+.team-member {
+  width: 270px;
+}
+
+.team,
+.button-item,
+.service-block {
+  background-color: var(--color-back-white);
+}
+
+.service-block {
+  /* width: ; */
+  height: 120px;
+}
+
+.service-block .icon {
+  width: 70px;
+  height: 70px;
+}
+
+.service-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-title,
+.social-title {
+  text-transform: uppercase;
+}
+
+.service-title,
+.team-name {
+  margin-bottom: 10px;
+}
+
+.service-text,
+.team-role,
+.address-link,
+.box-text {
+  font-weight: var(--font-weight-400);
+}
+
+.service-text,
+.address-link,
+.address-contact {
+  line-height: 1.7;
+}
+
+/* ---------------- SECCION PICTURES ---------------- */
+.pictures {
+  padding-top: 0;
+}
+
+.service-item:not(:first-child),
+.picture-item:nth-child(2),
+.team-member:not(:first-child) {
+  margin-left: 30px;
+}
+
+.picture-item:last-child {
+  margin-left: 23px;
+}
+
+.picture-title,
+.team-title {
+  margin-bottom: 50px;
+}
+
+.picture-title,
+.team-title,
+.client-title {
+  text-align: center;
+}
+
+.picture-title,
+.team-title,
+.client-title {
+  font-size: 36px;
+}
+
+/* ---------------- SECCION TEAM ---------------- */
+.team-member {
+  /* height: 428px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-role {
+  margin-bottom: 16px;
+}
+
+.team-member .social-link {
+  background-color: var(--color-white);
+}
+
+.team-member .social-link:hover .icon,
+.team-member .social-link:focus .icon {
+  fill: var(--color-white);
+}
+
+.team-member .social-link .icon {
+  fill: var(--color-client-border);
+}
+
+.team-member,
+.box-item {
+  background-color: var(--color-white);
+}
+
+/* ---------------- SECCION CLIENT ---------------- */
+.client {
+  padding-top: 59px;
+  padding-bottom: 151px;
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-item {
+  /* border: 1px solid var(--color-client-border);
+  border-radius: 4px; */
+  width: 170px;
+  height: 81px;
+}
+.client-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-client-border);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-link .icon {
+  width: 106px;
+  height: 52px;
+  fill: var(--color-client-border);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--color-blue);
+}
+
+.client-link:hover .icon,
+.client-link:focus .icon {
+  fill: var(--color-blue);
+}
+
+.client-title {
+  margin-bottom: 44px;
+}
+
+/* ---------- SECCION BOTONES PORTFOLIO ----------- */
+
+.buttons-list {
+  margin-bottom: 34px;
+}
+
+.button-box {
+  margin-right: 8px;
+}
+
+.button-item {
+  width: 100%;
+  height: 100%;
+}
+
+.button-item:hover,
+.button-item:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-item {
+  line-height: 1.6;
+  padding: 6px 22px;
+}
+
+.button-item:hover,
+.button-item:focus {
+  color: var(--color-white);
+}
+
+.buttons-list,
+.boxes-list {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+}
+
+/* ---------- SECCION BOXES PORTFOLIO ------------ */
+.box-item {
+  width: 370px;
+  /* max-height: 404px; */
+  margin-bottom: 30px;
+}
+
+.box-item > img {
+  width: 100%;
+}
+
+.box-link,
+.box-link img {
+  display: block;
+}
+
+.box-link:hover,
+.box-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.box-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.box-item:nth-child(n + 7) {
+  margin-bottom: 0px;
+}
+
+.box-foot {
+  padding: 20px 24px;
+  border-right: 1px solid var(--color-white-border);
+  border-bottom: 1px solid var(--color-white-border);
+  border-left: 1px solid var(--color-white-border);
+}
+
+.box-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  margin-bottom: 4px;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+  /* width: 100%; */
+  /* height: 250px; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+
+.address-link {
+  font-style: normal;
+}
+
+.address-contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+address {
+  margin-top: 14px;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.social-title {
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.social-list {
+  width: 206px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-white);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-blue);
+}
